@@ -3,96 +3,78 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Fidaa Alsaiedahmad - Software Engineer</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       text-align: center;
-      background-color: #fff;
       margin: 30px;
-      color: #000;
     }
-    img.profile {
+    img {
       border-radius: 50%;
-      width: 180px;
-      height: 180px;
+      width: 200px;
+      height: 200px;
       object-fit: cover;
-      border: 4px solid #007acc;
-    }
-    .icons {
-      margin-top: 20px;
     }
     .icons a {
-      margin: 10px;
+      margin: 0 10px;
       display: inline-block;
     }
     .icons img {
-      width: 40px;
-      height: 40px;
+      width: 32px;
+      height: 32px;
+      vertical-align: middle;
     }
-    h1 {
-      font-size: 28px;
-      margin-top: 10px;
-    }
-    h2 {
-      font-size: 22px;
+    .section {
       margin-top: 40px;
+      padding: 20px;
+      border-top: 1px solid #ccc;
     }
-    p {
-      max-width: 600px;
-      margin: 0 auto;
-      line-height: 1.6;
-    }
-    ul {
-      list-style: none;
-      padding-left: 0;
-      text-align: left;
-      display: inline-block;
-      margin-top: 10px;
-    }
-    ul li {
-      font-size: 16px;
-      margin: 5px 0;
+    .arabic {
+      direction: rtl;
+      text-align: right;
+      font-family: 'Arial', sans-serif;
     }
   </style>
 </head>
 <body>
   <h1>Fidaa Alsaiedahmad</h1>
-  <img src="profile.jpg" alt="Profile Photo" class="profile" />
+  <img src="profile.jpg" alt="Your Profile Photo"/>
 
   <div class="icons">
-    <a href="mailto:fidaa.alsaiedahmad@gmail.com" target="_blank">
-      <img src="https://img.icons8.com/color/48/gmail-new.png" alt="Gmail" />
-    </a>
-    <a href="https://github.com/fidaa83" target="_blank">
-      <img src="https://img.icons8.com/ios-filled/50/000000/github.png" alt="GitHub" />
-    </a>
-    <a href="https://www.linkedin.com/in/fidaa-alsaiedahmad-70b96a32b/" target="_blank">
-      <img src="https://img.icons8.com/color/48/linkedin.png" alt="LinkedIn" />
-    </a>
-    <a href="https://www.upwork.com/freelancers/~01242886068ad92c13" target="_blank">
-      <img src="https://img.icons8.com/ios-filled/50/4CAF50/upwork.png" alt="Upwork" />
-    </a>
-    <a href="fidaa-cv.pdf" download>
-      <img src="https://img.icons8.com/color/48/pdf-2.png" alt="Download CV" />
-    </a>
+    <a href="fidaa-cv.pdf" target="_blank"><img src="https://img.icons8.com/color/48/pdf.png" alt="CV"/></a>
+    <a href="https://github.com/fidaa83" target="_blank"><img src="https://img.icons8.com/ios-glyphs/30/github.png" alt="GitHub"/></a>
+    <a href="https://www.linkedin.com/in/fidaa-alsaiedahmad-70b96a32b" target="_blank"><img src="https://img.icons8.com/color/48/linkedin.png" alt="LinkedIn"/></a>
+    <a href="https://www.upwork.com/freelancers/~01242886068ad92c13" target="_blank"><img src="https://img.icons8.com/ios-filled/50/upwork.png" alt="Upwork"/></a>
+    <a href="mailto:fidaa.alsaiedahmad@gmail.com"><img src="https://img.icons8.com/color/48/gmail-new.png" alt="Email"/></a>
   </div>
 
-  <h2>About Me</h2>
-  <p>
-    I’m a Software Engineer with a strong background in developing automated solutions, real-world applications, and web-based tools.
-    Passionate about learning and building meaningful software.
-  </p>
+  <div class="section">
+    <h2>About Me</h2>
+    <p>
+      I’m a Software Engineer with a strong background in building practical and automated solutions.
+      I specialize in developing modern web applications and tools that solve real-world problems efficiently.
+    </p>
 
-  <h2>Skills</h2>
-  <ul>
-    <li>✔️ Web Development (.NET, HTML, CSS, JS)</li>
-    <li>✔️ Software Engineering Principles</li>
-    <li>✔️ Python & Automation</li>
-    <li>✔️ Git & GitHub</li>
-    <li>✔️ Agile Basics & Project Workflow</li>
-    <li>✔️ Languages: Arabic (native), Norwegian (excellent), English (very good)</li>
-  </ul>
+    <h2>Skills</h2>
+    <ul style="list-style: none; padding-left: 0;">
+      <li>✔️ HTML, CSS, JavaScript, Bootstrap</li>
+      <li>✔️ Git & GitHub for version control</li>
+      <li>✔️ Python scripting and automation</li>
+      <li>✔️ Problem-solving and clean code writing</li>
+    </ul>
+  </div>
+
+  <div class="section arabic">
+    <h2>نبذة عني</h2>
+    <p>أنا مهندس برمجيات أركز على تطوير حلول ذكية وعملية باستخدام تقنيات الويب. أعمل حالياً على تطوير مهاراتي عبر مشاريع حقيقية، منها بناء موقعي الشخصي والعمل على منصة خدمية لسوريا.</p>
+
+    <h2>مشاريعي</h2>
+    <ul>
+      <li>إنشاء موقع شخصي باستخدام GitHub Pages</li>
+      <li>مشروع موقع خدمي ضخم مخصص لسوريا</li>
+    </ul>
+  </div>
 </body>
 </html>
