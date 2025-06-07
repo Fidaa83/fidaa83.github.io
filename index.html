@@ -4,100 +4,97 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Fidaa Alsaiedahmad - Software Engineer</title>
+  <meta name="description" content="Fidaa Alsaiedahmad - Software Engineer portfolio site" />
+  <meta name="keywords" content="Fidaa Alsaiedahmad, Software Engineer, Portfolio, GitHub, LinkedIn, CV" />
+  <meta name="author" content="Fidaa Alsaiedahmad" />
+  <title>Fidaa Alsaiedahmad</title>
+  <link rel="icon" href="profile.jpg" type="image/jpeg" />
   <style>
     body {
       font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
       text-align: center;
-      margin: 30px;
+      color: #000;
     }
-    img {
-      border-radius: 50%;
-      width: 200px;
-      height: 200px;
+    img.profile {
+      width: 150px;
+      height: 150px;
       object-fit: cover;
-    }
-    .icons a {
-      margin: 0 10px;
-      display: inline-block;
-    }
-    .icons img {
-      width: 32px;
-      height: 32px;
-      vertical-align: middle;
-    }
-    .section {
-      margin-top: 40px;
-      padding: 20px;
-      border-top: 1px solid #ccc;
-    }
-    .arabic {
-      direction: rtl;
-      text-align: right;
-    }
-    iframe {
-      width: 80%;
-      height: 500px;
-      border: 1px solid #ccc;
+      border-radius: 50%;
+      border: 4px solid #007acc;
       margin-top: 20px;
     }
-    .download-btn {
-      margin-top: 10px;
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #007acc;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
+    h1 {
+      margin: 10px 0;
+      font-size: 28px;
     }
-    .download-btn:hover {
-      background-color: #005f99;
+    .icons {
+      margin: 20px 0;
+    }
+    .icons a {
+      display: inline-block;
+      margin: 0 10px;
+    }
+    .icons img {
+      width: 40px;
+      height: 40px;
+    }
+    h2 {
+      margin-top: 30px;
+      font-size: 24px;
+    }
+    p {
+      max-width: 600px;
+      margin: 0 auto 20px;
+      line-height: 1.6;
+    }
+    ul.skills {
+      list-style: none;
+      padding: 0;
+    }
+    ul.skills li {
+      margin: 5px 0;
+      font-size: 18px;
     }
   </style>
 </head>
 <body>
   <h1>Fidaa Alsaiedahmad</h1>
-  <img src="profile.jpg" alt="Your Profile Photo"/>
+  <img src="profile.jpg" alt="Fidaa Profile Photo" class="profile" />
 
   <div class="icons">
-    <a href="mailto:fidaa.alsaiedahmad@gmail.com"><img src="https://img.icons8.com/color/48/gmail-new.png" alt="Email"/></a>
-    <a href="https://github.com/fidaa83" target="_blank"><img src="https://img.icons8.com/ios-glyphs/30/github.png" alt="GitHub"/></a>
-    <a href="https://www.linkedin.com/in/fidaa-alsaiedahmad-70b96a32b" target="_blank"><img src="https://img.icons8.com/color/48/linkedin.png" alt="LinkedIn"/></a>
-    <a href="https://www.upwork.com/freelancers/~01242886068ad92c13" target="_blank"><img src="https://img.icons8.com/ios-filled/50/upwork.png" alt="Upwork"/></a>
+    <a href="mailto:fidaa.alsaiedahmad@gmail.com" title="Email">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" alt="Gmail" />
+    </a>
+    <a href="https://github.com/fidaa83" target="_blank" title="GitHub">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" />
+    </a>
+    <a href="https://linkedin.com/in/fidaa-alsaiedahmad" target="_blank" title="LinkedIn">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" />
+    </a>
+    <a href="https://www.upwork.com/freelancers/~01242886068ad92c13" target="_blank" title="Upwork">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/upwork.svg" alt="Upwork" />
+    </a>
+    <a href="fidaa-cv.pdf" target="_blank" title="View CV">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/adobeacrobatreader.svg" alt="CV" />
+    </a>
   </div>
 
-  <div class="section">
-    <h2>About Me</h2>
-    <p>
-      I’m a Software Engineer with a strong background in building practical and automated solutions.
-      I specialize in developing modern web applications and tools that solve real-world problems efficiently.
-    </p>
+  <h2>About Me</h2>
+  <p>
+    I'm a Software Engineer with a strong background in developing automated solutions, real-world applications, and web-based tools. Passionate about learning and building meaningful software.
+  </p>
 
-    <h2>Skills</h2>
-    <ul style="list-style: none; padding-left: 0;">
-      <li>✔️ HTML, CSS, JavaScript, Bootstrap</li>
-      <li>✔️ Git & GitHub for version control</li>
-      <li>✔️ Python scripting and automation</li>
-      <li>✔️ Problem-solving and clean code writing</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>My CV</h2>
-    <iframe src="fidaa-cv.pdf"></iframe>
-    <br />
-    <a class="download-btn" href="fidaa-cv.pdf" target="_blank" download>Download CV (PDF)</a>
-  </div>
-
-  <div class="section arabic">
-    <h2>نبذة عني</h2>
-    <p>أنا مهندس برمجيات أركز على تطوير حلول ذكية وعملية باستخدام تقنيات الويب. أعمل حالياً على تطوير مهاراتي عبر مشاريع حقيقية، منها بناء موقعي الشخصي والعمل على منصة خدمية لسوريا.</p>
-
-    <h2>مشاريعي</h2>
-    <ul>
-      <li>إنشاء موقع شخصي باستخدام GitHub Pages</li>
-      <li>مشروع موقع خدمي ضخم مخصص لسوريا</li>
-    </ul>
-  </div>
+  <h2>Skills</h2>
+  <ul class="skills">
+    <li>✔ Web Development (.NET, HTML, CSS, JS)</li>
+    <li>✔ Software Engineering Principles</li>
+    <li>✔ Python & Automation</li>
+    <li>✔ Git & GitHub</li>
+    <li>✔ Agile Basics & Project Workflow</li>
+    <li>✔ Languages: Arabic (native), Norwegian (excellent), English (very good)</li>
+  </ul>
 </body>
 </html>
