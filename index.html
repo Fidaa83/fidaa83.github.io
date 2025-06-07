@@ -12,30 +12,23 @@
       margin: 30px;
       background-color: #f5f7fa;
     }
-    img {
+    img.profile {
       border-radius: 50%;
       width: 200px;
       height: 200px;
       object-fit: cover;
-      border: 3px solid #0077b5;
     }
-    .icon-links a {
-      margin: 0 10px;
+    .icons a {
+      margin: 15px;
       display: inline-block;
     }
-    .icon-links img {
+    .icons img {
       width: 40px;
       height: 40px;
-      vertical-align: middle;
+      transition: transform 0.2s;
     }
-    .buttons a {
-      margin: 10px;
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #0077b5;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
+    .icons img:hover {
+      transform: scale(1.2);
     }
     .section {
       margin-top: 40px;
@@ -51,21 +44,20 @@
 </head>
 <body>
   <h1>Fidaa Alsaiedahmad</h1>
-  <img src="profile.jpg" alt="Your Profile Photo"/>
+  <img src="profile.jpg" alt="Your Profile Photo" class="profile"/>
 
-  <p>Email: <a href="mailto:fidaa.alsaiedahmad@gmail.com">fidaa.alsaiedahmad@gmail.com</a></p>
-
-  <div class="buttons">
-    <a href="fidaa-cv.pdf" download>Download CV</a>
-    <a href="https://www.upwork.com/freelancers/~01242886068ad92c13" target="_blank">Upwork</a>
-  </div>
-
-  <div class="icon-links">
-    <a href="https://github.com/fidaa83" target="_blank">
-      <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" title="GitHub">
+  <div class="icons">
+    <a href="fidaa-cv.pdf" download title="Download CV">
+      <img src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png" alt="Download CV">
     </a>
-    <a href="https://www.linkedin.com/in/fidaa-alsaiedahmad" target="_blank">
-      <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" title="LinkedIn">
+    <a href="https://www.upwork.com/freelancers/~01242886068ad92c13" target="_blank" title="Upwork">
+      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968752.png" alt="Upwork">
+    </a>
+    <a href="https://github.com/fidaa83" target="_blank" title="GitHub">
+      <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+    </a>
+    <a href="https://www.linkedin.com/in/fidaa-alsaiedahmad-70b96a32b/" target="_blank" title="LinkedIn">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
     </a>
   </div>
 
