@@ -9,52 +9,94 @@
     body {
       font-family: Arial, sans-serif;
       text-align: center;
-      margin: 30px;
       background-color: #f5f5f5;
+      margin: 0;
+      padding: 30px;
     }
-    img {
+
+    img.profile {
       border-radius: 50%;
-      width: 200px;
-      height: 200px;
+      width: 180px;
+      height: 180px;
       object-fit: cover;
-      border: 4px solid #0077b5;
+      border: 3px solid #007acc;
     }
+
     .icons {
-      margin-top: 15px;
+      margin: 20px 0;
     }
+
     .icons a {
       display: inline-block;
-      margin: 10px;
+      margin: 0 10px;
     }
+
     .icons img {
       width: 40px;
       height: 40px;
+      transition: transform 0.2s;
     }
+
+    .icons img:hover {
+      transform: scale(1.2);
+    }
+
+    h1 {
+      color: #222;
+    }
+
     .section {
-      margin-top: 40px;
-      padding: 20px;
+      max-width: 700px;
+      margin: 30px auto;
+      background: #ffffff;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    ul {
+      text-align: left;
+      padding-left: 20px;
     }
   </style>
 </head>
 <body>
+
   <h1>Fidaa Alsaiedahmad</h1>
-  <img src="profile.jpg" alt="Profile Photo"/>
+  <img src="profile.jpg" alt="Your Profile Photo" class="profile" />
 
   <div class="icons">
-    <a href="mailto:fidaa.alsaiedahmad@gmail.com" title="Email"><img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email"></a>
-    <a href="https://github.com/fidaa83" target="_blank" title="GitHub"><img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub"></a>
-    <a href="https://www.linkedin.com/in/fidaa-alsaiedahmad-a643a5249/" target="_blank" title="LinkedIn"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"></a>
-    <a href="https://www.upwork.com/freelancers/~01242886068ad92c13" target="_blank" title="Upwork"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" alt="Upwork"></a>
-    <a href="fidaa-cv.pdf" download title="Download CV"><img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" alt="Download CV"></a>
+    <a href="mailto:fidaa.alsaiedahmad@gmail.com" title="Email"><img src="https://img.icons8.com/color/48/000000/gmail--v1.png"/></a>
+    <a href="https://github.com/fidaa83" target="_blank" title="GitHub"><img src="https://img.icons8.com/ios-glyphs/90/000000/github.png"/></a>
+    <a href="https://www.linkedin.com/in/fidaa-alsaiedahmad-a643a5249/" target="_blank" title="LinkedIn"><img src="https://img.icons8.com/color/48/000000/linkedin.png"/></a>
+    <a href="https://www.upwork.com/freelancers/~01242886068ad92c13" target="_blank" title="Upwork"><img src="https://img.icons8.com/ios-filled/50/00b22d/upwork.png"/></a>
+    <a href="fidaa-cv.pdf" title="Download CV"><img src="https://img.icons8.com/color/48/000000/pdf-2--v1.png"/></a>
   </div>
 
   <div class="section">
     <h2>About Me</h2>
     <p>
-      I am a Software Engineer with a strong background in building practical and automated solutions.
-      I'm currently enrolled in a 4-month intensive course focused on full-stack development and real-world software projects.
-      I also have years of experience in dental prosthetics and medical material sales.
+      I’m a Software Engineer with a strong background in building practical and automated solutions.
+      I'm currently enrolled in a 4-month full-stack development course focusing on real-world web and software projects.
+      Previously experienced in dental prosthetics and medical supply sales (2007–2015). Committed to continuous learning and growth.
     </p>
+
+    <h2>Skills</h2>
+    <ul>
+      <li>✔️ HTML, CSS, JavaScript</li>
+      <li>✔️ .NET Web Development</li>
+      <li>✔️ API Integration</li>
+      <li>✔️ Git & GitHub</li>
+      <li>✔️ Software Development Principles</li>
+      <li>✔️ Fluent in Arabic, English, Excellent in Norwegian</li>
+    </ul>
+
+    <h2>Projects</h2>
+    <ul>
+      <li>✔️ Created a personal website using GitHub Pages</li>
+      <li>✔️ Building a large-scale service platform for Syria</li>
+      <li>✔️ Automated data entry tools using Python</li>
+    </ul>
   </div>
 </body>
 </html>
