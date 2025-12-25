@@ -1,131 +1,161 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Fidaa Alsaiedahmad - Software Engineer Portfolio" />
-  <meta name="keywords" content="Fidaa Alsaiedahmad, Software Engineer, Web Developer, CV, Portfolio" />
-  <meta name="author" content="Fidaa Alsaiedahmad" />
   <title>Fidaa Alsaiedahmad</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background: #ffffff;
-      margin: 0;
-      padding: 20px;
-    }
-
-    img.profile {
-      width: 180px;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 4px solid #0077cc;
-      margin-top: 20px;
-    }
-
-    h1 {
-      margin-top: 10px;
-      font-size: 28px;
-    }
-
-    .icons {
-      margin-top: 20px;
-    }
-
-    .icons a {
-      display: inline-block;
-      margin: 0 10px;
-    }
-
-    .icons img {
-      width: 40px;
-      height: 40px;
-    }
-
-    .section {
-      margin-top: 40px;
-      padding: 0 20px;
-    }
-
-    .section h2 {
-      font-size: 22px;
-      margin-bottom: 10px;
-    }
-
-    .section p, .section li {
-      font-size: 16px;
-      line-height: 1.6;
-      max-width: 700px;
-      margin: 0 auto;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    ul li::before {
-      content: "✔";
-      color: #0077cc;
-      margin-right: 6px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <h1>Fidaa Alsaiedahmad</h1>
-  <img src="profile.jpg" alt="Fidaa's Photo" class="profile" />
+  <header class="hero">
+    <h1 class="name">Fidaa Alsaiedahmad</h1>
+    <p class="subtitle">Software Engineer • Web & Automation</p>
 
-<div class="icons">
-  <a href="fidaa-cv.pdf" target="_blank" title="View CV">
-    <img src="https://img.icons8.com/color/48/pdf.png" alt="CV Icon" style="width: 38px; height: 38px;"  />
-  </a>
+    <img src="assets/img/profile.jpg" alt="Fidaa profile photo" class="profile" />
 
-  <a href="certificate.html" target="_blank" title="Graduation Certificates">
-    <img src="https://cdn-icons-png.flaticon.com/512/3330/3330423.png" alt="Graduation Certificate" style="width: 38px; height: 36px;" />
-  </a>
+    <nav class="icons" aria-label="Quick links">
+      <a href="assets/pdf/fidaa-cv.pdf" target="_blank" rel="noopener" title="CV">
+        <img src="https://img.icons8.com/color/48/pdf.png" alt="CV" />
+      </a>
 
-  <a href="mailto:fidaa.alsaiedahmad@gmail.com" title="Email">
-    <img src="https://img.icons8.com/color/48/gmail-new.png" alt="Gmail Icon" />
-  </a>
+      <a href="certificate.html" target="_blank" rel="noopener" title="Certificates">
+        <img src="https://cdn-icons-png.flaticon.com/512/3330/3330423.png" alt="Certificates" />
+      </a>
 
-  <a href="https://www.linkedin.com/in/fidaa-alsaiedahmad-3b4027371/" target="_blank" title="LinkedIn">
-    <img src="https://img.icons8.com/color/48/linkedin.png" alt="LinkedIn Icon" />
-  </a>
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=fidaa.alsaiedahmad@gmail.com"
+         target="_blank" rel="noopener" title="Email (Gmail)">
+        <img src="https://img.icons8.com/color/48/gmail-new.png" alt="Email" />
+      </a>
 
-  <a href="https://github.com/fidaa83" target="_blank" title="GitHub">
-    <img src="https://img.icons8.com/fluency/48/github.png" alt="GitHub Icon" />
-  </a>
+      <a href="https://www.linkedin.com/in/fidaa-alsaiedahmad-3b4027371/" target="_blank" rel="noopener" title="LinkedIn">
+        <img src="https://img.icons8.com/color/48/linkedin.png" alt="LinkedIn" />
+      </a>
 
-  <a href="https://www.upwork.com/freelancers/~01242886068ad92c13" target="_blank" title="Upwork">
-    <img src="https://img.icons8.com/ios-filled/50/26e07f/upwork.png" alt="Upwork Icon" />
-  </a>
-</div>
+      <a href="https://github.com/fidaa83" target="_blank" rel="noopener" title="GitHub">
+        <img src="https://img.icons8.com/fluency/48/github.png" alt="GitHub" />
+      </a>
 
+      <a href="https://www.upwork.com/freelancers/~01242886068ad92c13" target="_blank" rel="noopener" title="Upwork">
+        <img src="https://img.icons8.com/ios-filled/50/26e07f/upwork.png" alt="Upwork" />
+      </a>
+    </nav>
+  </header>
 
-  <div class="section">
-    <h2>About Me</h2>
-    <p>
-      I’m a Full-Stack Software Engineer with a strong background in developing automated solutions, real-world applications, and web-based tools using .NET, HTML, CSS, and JavaScript.
-    I enjoy building complete systems from front-end interfaces to back-end logic and databases. With an academic background in Computer Engineering, I combine solid technical foundations with practical skills. Passionate about continuous learning, problem-solving, and creating meaningful software that adds real value.
-    </p>
-  </div>
+  <main class="container">
+    <section class="section" id="about">
+      <h2>About</h2>
+      <div class="about-text">
+        <p>
+          I’m a software engineer with a Computer Engineering background. I build practical web applications and automation tools using
+          <strong>.NET</strong> and <strong>JavaScript</strong>. I focus on clean structure, maintainability, and delivering reliable solutions that solve real problems.
+        </p>
+      </div>
+    </section>
 
-  <div class="section">
-   <h2>Skills</h2>
-<ul>
-  <li>Web Development: .NET, HTML, CSS, JavaScript</li>
-  <li>Software Engineering Principles: Clean Code, SOLID, DRY, OOP</li>
-  <li>Python & Automation: Scripts, Task Automation, Data Handling</li>
-  <li>Git & GitHub: Version Control, Collaboration, Branching</li>
-  <li>Agile Workflow: Scrum, Sprints, Task Management</li>
-  <li>Computer Science Fundamentals: Algorithms, Data Structures, Operating Systems</li>
-  <li>Database Basics: SQL, Relational Databases, NoSQL</li>
-  <li>Problem Solving & Analytical Thinking</li>
-  <li>Languages: Arabic (native), Norwegian (excellent), English (very good)</li>
-</ul>
-  </div>
+    <section class="section" id="projects">
+      <div class="section-head">
+        <h2>Projects</h2>
+        <p class="hint">Selected work from GitHub</p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <div class="card-top">
+            <h3>To-Do App (Local Storage)</h3>
+            <span class="tag">HTML • CSS • JS</span>
+          </div>
+
+          <p>
+            A task manager with add / delete / mark as done and simple persistence using <strong>localStorage</strong>.
+          </p>
+
+          <ul class="bullets">
+            <li>Add tasks with input validation</li>
+            <li>Mark tasks done + clear done tasks</li>
+            <li>Tasks persist after refresh (localStorage)</li>
+          </ul>
+
+          <div class="links">
+            <a class="btn" href="https://github.com/fidaa83/simple-app" target="_blank" rel="noopener">Repo</a>
+            <a class="btn btn-ghost" href="https://fidaa83.github.io/simple-app/" target="_blank" rel="noopener">Live</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <h3>Personal Portfolio Website</h3>
+            <span class="tag">GitHub Pages</span>
+          </div>
+
+          <p>
+            A clean personal website to present projects, certificates, and contact links — hosted on GitHub Pages.
+          </p>
+
+          <ul class="bullets">
+            <li>Responsive layout with clear sections</li>
+            <li>Direct access to CV & certificates</li>
+            <li>Easy to maintain and extend</li>
+          </ul>
+
+          <div class="links">
+            <a class="btn" href="https://github.com/fidaa83/fidaa83.github.io" target="_blank" rel="noopener">Repo</a>
+            <a class="btn btn-ghost" href="https://fidaa83.github.io/" target="_blank" rel="noopener">Live</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <h2>Skills</h2>
+
+      <div class="skills-grid">
+        <div class="skill-box">
+          <h3>Web</h3>
+          <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Responsive UI</li>
+          </ul>
+        </div>
+
+        <div class="skill-box">
+          <h3>.NET</h3>
+          <ul>
+            <li>C#, .NET fundamentals</li>
+            <li>Clean structure & maintainability</li>
+          </ul>
+        </div>
+
+        <div class="skill-box">
+          <h3>Python & Automation</h3>
+          <ul>
+            <li>Basic scripting</li>
+            <li>Simple automation tasks</li>
+          </ul>
+        </div>
+
+        <div class="skill-box">
+          <h3>Tools & Workflow</h3>
+          <ul>
+            <li>Git, GitHub</li>
+            <li>Agile mindset (sprints, task focus)</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="small">
+        Languages: Arabic (native), Norwegian (excellent), English (very good)
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Fidaa Alsaiedahmad</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
-</html> 
+</html>
