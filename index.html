@@ -11,7 +11,7 @@
 
     <!-- الهيدر / القائمة العلوية -->
     <header class="p-6 flex justify-between items-center max-w-6xl mx-auto border-b border-slate-800">
-        <h1 class="text-2xl font-bold text-emerald-400">فداء | Fidaa</h1>
+        <a href="#about" class="text-2xl font-bold text-emerald-400 hover:text-emerald-300 transition duration-300">فداء | Fidaa</a>
         <nav class="space-x-6 space-x-reverse text-slate-300">
             <a href="#about" class="hover:text-emerald-400 transition">نبذة عني</a>
             <a href="#skills" class="hover:text-emerald-400 transition">المهارات</a>
@@ -53,7 +53,7 @@
         </div>
     </section>
 
-    <!-- قسم المهارات والتقنيات (من بروفايلك الأصلي) -->
+    <!-- قسم المهارات والتقنيات -->
     <section id="skills" class="py-16 bg-slate-800/50 border-y border-slate-800">
         <div class="max-w-6xl mx-auto px-6">
             <h3 class="text-3xl font-bold text-center mb-12 text-emerald-400">المهارات والتقنيات</h3>
@@ -83,28 +83,37 @@
         </div>
     </section>
 
-    <!-- قسم الأعمال والمشاريع الحقيقية والتسويقية -->
+    <!-- قسم معرض الأعمال والمشاريع -->
     <section id="portfolio" class="py-20 bg-slate-900">
         <div class="max-w-6xl mx-auto px-6">
             <h3 class="text-3xl font-bold text-center mb-16 text-emerald-400">معرض الأعمال والمشاريع</h3>
             
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
                 
-                <!-- مشروع 1: To-Do App الحقيقي من جيت هاب -->
-                <div class="bg-slate-800 rounded-xl overflow-hidden border border-slate-700">
-                    <div class="p-6">
-                        <span class="text-xs text-emerald-400 font-medium bg-emerald-500/10 px-3 py-1 rounded-full">تطبيق ويب حقيقي</span>
-                        <h4 class="text-xl font-bold mt-4 mb-2">To-Do App (Local Storage)</h4>
-                        <p class="text-slate-400 text-sm mb-4">تطبيق إدارة المهام مع حفظ البيانات محلياً وتأكيد الإدخال وتنظيف المهام المكتملة.</p>
-                        <div class="flex gap-2">
-                            <span class="text-xs text-slate-400 bg-slate-900 px-2.5 py-1 rounded border border-slate-700">HTML</span>
-                            <span class="text-xs text-slate-400 bg-slate-900 px-2.5 py-1 rounded border border-slate-700">CSS</span>
-                            <span class="text-xs text-slate-400 bg-slate-900 px-2.5 py-1 rounded border border-slate-700">JS</span>
-                        </div>
+                <!-- مشروع 1: To-Do App -->
+                <div class="bg-slate-800 rounded-xl overflow-hidden border border-slate-700 p-6">
+                    <span class="text-xs text-emerald-400 font-medium bg-emerald-500/10 px-3 py-1 rounded-full">تطبيق ويب</span>
+                    <h4 class="text-xl font-bold mt-4 mb-2">To-Do App (Local Storage)</h4>
+                    <p class="text-slate-400 text-sm mb-4">تطبيق إدارة المهام مع حفظ البيانات محلياً وتأكيد الإدخال وتنظيف المهام المكتملة.</p>
+                    <div class="flex gap-2">
+                        <span class="text-xs text-slate-400 bg-slate-900 px-2.5 py-1 rounded border border-slate-700">HTML</span>
+                        <span class="text-xs text-slate-400 bg-slate-900 px-2.5 py-1 rounded border border-slate-700">CSS</span>
+                        <span class="text-xs text-slate-400 bg-slate-900 px-2.5 py-1 rounded border border-slate-700">JavaScript</span>
                     </div>
                 </div>
 
-                <!-- مشروع 2: متجر إلكتروني -->
+                <!-- مشروع 2: Personal Portfolio Website -->
+                <div class="bg-slate-800 rounded-xl overflow-hidden border border-slate-700 p-6">
+                    <span class="text-xs text-emerald-400 font-medium bg-emerald-500/10 px-3 py-1 rounded-full">GitHub Pages</span>
+                    <h4 class="text-xl font-bold mt-4 mb-2">Personal Portfolio Website</h4>
+                    <p class="text-slate-400 text-sm mb-4">موقع تعريفي شخصي لعرض المشاريع والمهارات البرمجية ووسائل التواصل عبر GitHub Pages.</p>
+                    <div class="flex gap-2">
+                        <span class="text-xs text-slate-400 bg-slate-900 px-2.5 py-1 rounded border border-slate-700">HTML5</span>
+                        <span class="text-xs text-slate-400 bg-slate-900 px-2.5 py-1 rounded border border-slate-700">Tailwind CSS</span>
+                    </div>
+                </div>
+
+                <!-- مشروع 3: متجر إلكتروني -->
                 <div class="bg-slate-800 rounded-xl overflow-hidden border border-slate-700">
                     <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=600&h=400&auto=format&fit=crop" alt="متجر إلكتروني" class="w-full h-44 object-cover">
                     <div class="p-6">
@@ -118,7 +127,7 @@
                     </div>
                 </div>
 
-                <!-- مشروع 3: موقع شركة تعريفي -->
+                <!-- مشروع 4: موقع شركة تعريفي -->
                 <div class="bg-slate-800 rounded-xl overflow-hidden border border-slate-700">
                     <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=600&h=400&auto=format&fit=crop" alt="موقع شركة" class="w-full h-44 object-cover">
                     <div class="p-6">
