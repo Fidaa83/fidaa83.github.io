@@ -3,110 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>فداء - مهندس برمجيات ومطور مواقع</title>
-    <!-- استدعاء مكتبة Tailwind CSS للتصميم العصري -->
+    <title>فداء السيد أحمد - مهندس برمجيات ومطور مواقع</title>
+    <!-- استدعاء مكتبة Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-slate-900 text-white font-sans scroll-smooth">
 
     <!-- الهيدر / القائمة العلوية -->
-    <header class="p-6 flex justify-between items-center max-w-6xl mx-auto">
+    <header class="p-6 flex justify-between items-center max-w-6xl mx-auto border-b border-slate-800">
         <h1 class="text-2xl font-bold text-emerald-400">فداء | Fidaa</h1>
         <nav class="space-x-6 space-x-reverse text-slate-300">
-            <a href="#services" class="hover:text-emerald-400 transition">الخدمات</a>
-            <a href="#portfolio" class="hover:text-emerald-400 transition">الأعمال</a>
+            <a href="#about" class="hover:text-emerald-400 transition">نبذة عني</a>
+            <a href="#skills" class="hover:text-emerald-400 transition">المهارات</a>
+            <a href="#portfolio" class="hover:text-emerald-400 transition">المشاريع</a>
             <a href="#contact" class="hover:text-emerald-400 transition">تواصل معي</a>
         </nav>
     </header>
 
-    <!-- القسم الرئيسي (Hero Section) -->
-    <section class="text-center py-20 px-4 max-w-4xl mx-auto">
+    <!-- القسم الرئيسي مع الصورة الشخصية -->
+    <section id="about" class="text-center py-16 px-4 max-w-4xl mx-auto">
+        <!-- الصورة الشخصية -->
+        <div class="mb-6 flex justify-center">
+            <img src="https://github.com/fidaa83.png" alt="Fidaa Alsaiedahmad" class="w-36 h-36 rounded-full border-4 border-emerald-400 shadow-xl object-cover">
+        </div>
+
         <span class="bg-emerald-500/10 text-emerald-400 px-4 py-1.5 rounded-full text-sm font-semibold border border-emerald-500/20">
-            مهندس برمجيات ومطور مواقع متكامل
+            Fidaa Alsaiedahmad — مهندس برمجيات
         </span>
-        <h2 class="text-4xl md:text-6xl font-extrabold mt-6 leading-tight">
-            أبني لك مواقع إلكترونية حديثة وسريعة تنمو بها أعمالك
+
+        <h2 class="text-3xl md:text-5xl font-extrabold mt-6 leading-tight">
+            أبني لك مواقع وتطبيقات ويب حديثة وسريعة تنمو بها أعمالك
         </h2>
-        <p class="text-slate-400 text-lg mt-6 max-w-2xl mx-auto">
-            أساعد الشركات والأفراد على تحويل أفكارهم إلى مواقع إلكترونية احترافية مجهزة بأحدث التقنيات وتعمل بكفاءة على جميع الشاشات.
+
+        <p class="text-slate-300 text-base md:text-lg mt-6 max-w-2xl mx-auto leading-relaxed">
+            مهندس برمجيات بخلفية في هندسة الحاسوب. أساعد الشركات والأفراد على تحويل أفكارهم إلى حلول برمجية ومواقع احترافية مجهزة بأحدث التقنيات.
         </p>
+
+        <!-- اللغات المساندة -->
+        <div class="mt-4 text-sm text-slate-400">
+            <span>اللغات: العربية (الأم) • النرويجي (ممتاز) • الإنجليزي (ممتاز)</span>
+        </div>
+
         <div class="mt-8 flex justify-center gap-4">
             <a href="https://wa.me/4747740663?text=مرحباً%20فداء،%20أرغب%20في%20الاستفسار%20عن%20خدمات%20تطوير%20المواقع" 
                target="_blank" 
                class="bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold py-3 px-8 rounded-lg transition duration-300 shadow-lg shadow-emerald-500/20">
-               اطلب موقعك الآن
+               اطلب موقعك الآن (واتساب)
             </a>
         </div>
     </section>
 
-    <!-- قسم الخدمات -->
-    <section id="services" class="py-16 bg-slate-800/50 border-y border-slate-800">
+    <!-- قسم المهارات والتقنيات (من بروفايلك الأصلي) -->
+    <section id="skills" class="py-16 bg-slate-800/50 border-y border-slate-800">
         <div class="max-w-6xl mx-auto px-6">
-            <h3 class="text-3xl font-bold text-center mb-12 text-emerald-400">خدماتي البرمجية</h3>
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- خدمة 1 -->
-                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 hover:border-emerald-500/50 transition duration-300">
-                    <h4 class="text-xl font-bold mb-3">مواقع الشركات والأفراد</h4>
-                    <p class="text-slate-400 text-sm">واجهات أنيقة وسريعة تعكس هوية مشروعك الاحترافية أمام العملاء.</p>
+            <h3 class="text-3xl font-bold text-center mb-12 text-emerald-400">المهارات والتقنيات</h3>
+            <div class="grid md:grid-cols-4 gap-6">
+                
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700">
+                    <h4 class="text-lg font-bold text-white mb-2">Web Development</h4>
+                    <p class="text-slate-400 text-sm">HTML5, CSS3, JavaScript, Responsive UI</p>
                 </div>
-                <!-- خدمة 2 -->
-                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 hover:border-emerald-500/50 transition duration-300">
-                    <h4 class="text-xl font-bold mb-3">تطوير المتاجر الإلكترونية</h4>
-                    <p class="text-slate-400 text-sm">حلول متكاملة لعرض المنتجات وإدارة الطلبات لاستقبال مبيعاتك.</p>
+
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700">
+                    <h4 class="text-lg font-bold text-white mb-2">.NET Environment</h4>
+                    <p class="text-slate-400 text-sm">C#, .NET Fundamentals, Clean Architecture</p>
                 </div>
-                <!-- خدمة 3 -->
-                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 hover:border-emerald-500/50 transition duration-300">
-                    <h4 class="text-xl font-bold mb-3">تحسين وتطوير المواقع</h4>
-                    <p class="text-slate-400 text-sm">تعديل الأكواد البرمجية، تحسين السرعة، وضبط توافق الشاشات.</p>
+
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700">
+                    <h4 class="text-lg font-bold text-white mb-2">Python & Automation</h4>
+                    <p class="text-slate-400 text-sm">Basic Scripting & Automated Tasks</p>
                 </div>
+
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700">
+                    <h4 class="text-lg font-bold text-white mb-2">Tools & Workflow</h4>
+                    <p class="text-slate-400 text-sm">Git, GitHub, Agile Mindset</p>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <!-- قسم معرض الأعمال (Portfolio) -->
+    <!-- قسم الأعمال والمشاريع الحقيقية والتسويقية -->
     <section id="portfolio" class="py-20 bg-slate-900">
         <div class="max-w-6xl mx-auto px-6">
-            <h3 class="text-3xl font-bold text-center mb-16 text-emerald-400">نماذج من أعمالي</h3>
+            <h3 class="text-3xl font-bold text-center mb-16 text-emerald-400">معرض الأعمال والمشاريع</h3>
             
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- مشروع 1 -->
-                <div class="bg-slate-800 rounded-xl overflow-hidden border border-slate-700 group hover:border-emerald-500/50 transition duration-300">
-                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=600&h=400&auto=format&fit=crop" alt="موقع شركة شحن" class="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-300">
+                
+                <!-- مشروع 1: To-Do App الحقيقي من جيت هاب -->
+                <div class="bg-slate-800 rounded-xl overflow-hidden border border-slate-700">
+                    <div class="p-6">
+                        <span class="text-xs text-emerald-400 font-medium bg-emerald-500/10 px-3 py-1 rounded-full">تطبيق ويب حقيقي</span>
+                        <h4 class="text-xl font-bold mt-4 mb-2">To-Do App (Local Storage)</h4>
+                        <p class="text-slate-400 text-sm mb-4">تطبيق إدارة المهام مع حفظ البيانات محلياً وتأكيد الإدخال وتنظيف المهام المكتملة.</p>
+                        <div class="flex gap-2">
+                            <span class="text-xs text-slate-400 bg-slate-900 px-2.5 py-1 rounded border border-slate-700">HTML</span>
+                            <span class="text-xs text-slate-400 bg-slate-900 px-2.5 py-1 rounded border border-slate-700">CSS</span>
+                            <span class="text-xs text-slate-400 bg-slate-900 px-2.5 py-1 rounded border border-slate-700">JS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- مشروع 2: متجر إلكتروني -->
+                <div class="bg-slate-800 rounded-xl overflow-hidden border border-slate-700">
+                    <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=600&h=400&auto=format&fit=crop" alt="متجر إلكتروني" class="w-full h-44 object-cover">
+                    <div class="p-6">
+                        <span class="text-xs text-emerald-400 font-medium bg-emerald-500/10 px-3 py-1 rounded-full">تصميم متجر</span>
+                        <h4 class="text-xl font-bold mt-4 mb-2">متجر إلكتروني متكامل</h4>
+                        <p class="text-slate-400 text-sm mb-4">تطوير واجهة متجر لعرض المنتجات مع سلة تسوق وربط بوابة دفع.</p>
+                        <div class="flex gap-2">
+                            <span class="text-xs text-slate-400 bg-slate-900 px-2.5 py-1 rounded border border-slate-700">Tailwind</span>
+                            <span class="text-xs text-slate-400 bg-slate-900 px-2.5 py-1 rounded border border-slate-700">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- مشروع 3: موقع شركة تعريفي -->
+                <div class="bg-slate-800 rounded-xl overflow-hidden border border-slate-700">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=600&h=400&auto=format&fit=crop" alt="موقع شركة" class="w-full h-44 object-cover">
                     <div class="p-6">
                         <span class="text-xs text-emerald-400 font-medium bg-emerald-500/10 px-3 py-1 rounded-full">موقع تعريفي</span>
-                        <h4 class="text-xl font-bold mt-4 mb-2">موقع شركة شحن دولي</h4>
-                        <p class="text-slate-400 text-sm mb-4 line-clamp-2">تصميم وبرمجة واجهة مستخدم حديثة ومتجاوبة لشركة شحن لخدمة عرض الخدمات والأسعار.</p>
+                        <h4 class="text-xl font-bold mt-4 mb-2">موقع تعريفي للشركات</h4>
+                        <p class="text-slate-400 text-sm mb-4">تصميم واجهة أنيقة لعرض خدمات الشركات والتواصل المباشر مع العملاء.</p>
                         <div class="flex gap-2">
-                            <span class="text-xs text-slate-400 bg-slate-900 px-2.5 py-1 rounded border border-slate-700">React</span>
-                            <span class="text-xs text-slate-400 bg-slate-900 px-2.5 py-1 rounded border border-slate-700">Tailwind</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- مشروع 2 -->
-                <div class="bg-slate-800 rounded-xl overflow-hidden border border-slate-700 group hover:border-emerald-500/50 transition duration-300">
-                    <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=600&h=400&auto=format&fit=crop" alt="متجر إلكتروني للملابس" class="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-300">
-                    <div class="p-6">
-                        <span class="text-xs text-emerald-400 font-medium bg-emerald-500/10 px-3 py-1 rounded-full">متجر إلكتروني</span>
-                        <h4 class="text-xl font-bold mt-4 mb-2">متجر "أناقة" للملابس</h4>
-                        <p class="text-slate-400 text-sm mb-4 line-clamp-2">تطوير متجر متكامل يعرض المنتجات، إدارة الطلبات، وربط بوابة دفع إلكترونية آمنة.</p>
-                        <div class="flex gap-2">
-                            <span class="text-xs text-slate-400 bg-slate-900 px-2.5 py-1 rounded border border-slate-700">Shopify</span>
-                            <span class="text-xs text-slate-400 bg-slate-900 px-2.5 py-1 rounded border border-slate-700">CSS3</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- مشروع 3 -->
-                <div class="bg-slate-800 rounded-xl overflow-hidden border border-slate-700 group hover:border-emerald-500/50 transition duration-300">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=600&h=400&auto=format&fit=crop" alt="تطبيق تحليل بيانات" class="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-300">
-                    <div class="p-6">
-                        <span class="text-xs text-emerald-400 font-medium bg-emerald-500/10 px-3 py-1 rounded-full">تطبيق ويب</span>
-                        <h4 class="text-xl font-bold mt-4 mb-2">لوحة تحكم ذكية</h4>
-                        <p class="text-slate-400 text-sm mb-4 line-clamp-2">بناء لوحة تحكم داخلية لإدارة العمليات وتحليل البيانات المالية لشركة تجارية.</p>
-                        <div class="flex gap-2">
-                            <span class="text-xs text-slate-400 bg-slate-900 px-2.5 py-1 rounded border border-slate-700">Vue.js</span>
-                            <span class="text-xs text-slate-400 bg-slate-900 px-2.5 py-1 rounded border border-slate-700">Firebase</span>
+                            <span class="text-xs text-slate-400 bg-slate-900 px-2.5 py-1 rounded border border-slate-700">UI/UX</span>
+                            <span class="text-xs text-slate-400 bg-slate-900 px-2.5 py-1 rounded border border-slate-700">Web</span>
                         </div>
                     </div>
                 </div>
@@ -115,17 +136,17 @@
         </div>
     </section>
 
-    <!-- قسم الفوتر / التواصل النهائي -->
+    <!-- الفوتر والتواصل -->
     <footer id="contact" class="py-12 bg-slate-950 border-t border-slate-800 text-center">
         <div class="max-w-4xl mx-auto px-6">
-            <h3 class="text-2xl font-bold text-white mb-4">هل لديك فكرة مشروع تريد تنفيذها؟</h3>
-            <p class="text-slate-400 mb-8">دعنا نتحدث ونحاول تحويل فكرتك إلى واقع برمجي احترافي.</p>
+            <h3 class="text-2xl font-bold text-white mb-4">هل لديك مشروع تريد تنفيذه؟</h3>
+            <p class="text-slate-400 mb-8">يسعدني التواصل معك للحديث حول التفاصيل البرمجية وتصميم موقعك.</p>
             <a href="https://wa.me/4747740663?text=مرحباً%20فداء،%20أرغب%20في%20الاستفسار%20عن%20خدمات%20تطوير%20المواقع" 
                target="_blank" 
                class="inline-block bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold py-3 px-8 rounded-lg transition duration-300">
                تواصل معي مباشرة عبر الواتساب
             </a>
-            <p class="text-slate-600 text-xs mt-12">جميع الحقوق محفوظة © فداء 2026</p>
+            <p class="text-slate-600 text-xs mt-12">جميع الحقوق محفوظة © فداء السيد أحمد 2026</p>
         </div>
     </footer>
 
