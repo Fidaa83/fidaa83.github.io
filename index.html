@@ -14,7 +14,7 @@
         }
     </script>
 
-    <!-- Prevent Theme Flash (FOUC) -->
+    <!-- Prevent Theme Flash -->
     <script>
         if (localStorage.getItem('color-theme') === 'light' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: light)').matches)) {
             document.documentElement.classList.remove('dark');
@@ -25,129 +25,65 @@
 </head>
 <body class="bg-slate-50 text-slate-800 dark:bg-slate-900 dark:text-white font-sans scroll-smooth transition-colors duration-300">
 
-    <!-- Sticky Header Navigation -->
+    <!-- Header -->
     <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-50/80 dark:bg-slate-900/80 p-4 md:p-5 border-b border-slate-200 dark:border-slate-800 transition-colors duration-300">
         <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
-            
             <div class="flex items-center justify-between w-full sm:w-auto">
-                <a href="#about" class="text-xl md:text-2xl font-bold text-emerald-600 dark:text-emerald-400 hover:opacity-80 transition duration-300">
-                    فداء | Fidaa
-                </a>
-
-                <!-- Mobile Theme Toggle -->
-                <button id="theme-toggle" type="button" aria-label="تغيير المظهر / Toggle Theme" class="sm:hidden p-2 text-slate-500 dark:text-slate-400 hover:text-emerald-500 focus:outline-none rounded-lg text-sm">
-                    <svg id="theme-toggle-dark-icon" class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
-                    <svg id="theme-toggle-light-icon" class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.707.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 100 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
-                </button>
+                <a href="#about" class="text-xl md:text-2xl font-bold text-emerald-600 dark:text-emerald-400">فداء | Fidaa</a>
+                <button id="theme-toggle" class="sm:hidden p-2 text-slate-500 dark:text-slate-400 rounded-lg">تغيير المظهر</button>
             </div>
-
-            <nav class="flex flex-wrap justify-center items-center gap-3 sm:gap-6 text-slate-600 dark:text-slate-300 text-xs sm:text-sm md:text-base">
-                <a href="#about" class="hover:text-emerald-500 transition whitespace-nowrap">نبذة عني</a>
-                <a href="#skills" class="hover:text-emerald-500 transition whitespace-nowrap">المهارات والأكاديمية</a>
-                <a href="#projects" class="hover:text-emerald-500 transition whitespace-nowrap">المشاريع</a>
-                <a href="#contact" class="hover:text-emerald-500 transition whitespace-nowrap">تواصل معي</a>
-                
-                <!-- Desktop Theme Toggle -->
-                <button id="theme-toggle-desktop" type="button" aria-label="تغيير المظهر / Toggle Theme" class="hidden sm:block p-2 text-slate-500 dark:text-slate-400 hover:text-emerald-500 focus:outline-none rounded-lg text-sm border border-slate-300 dark:border-slate-700">
-                    <svg id="theme-toggle-dark-icon-desktop" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
-                    <svg id="theme-toggle-light-icon-desktop" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.707.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 100 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
-                </button>
+            <nav class="flex flex-wrap justify-center items-center gap-3 sm:gap-6 text-sm">
+                <a href="#about" class="hover:text-emerald-500 transition">نبذة عني</a>
+                <a href="#skills" class="hover:text-emerald-500 transition">المهارات</a>
+                <a href="#projects" class="hover:text-emerald-500 transition">المشاريع</a>
+                <a href="#contact" class="hover:text-emerald-500 transition">تواصل معي</a>
             </nav>
-
         </div>
     </header>
 
-    <!-- Hero / About Section -->
+    <!-- About Section -->
     <section id="about" class="text-center py-12 md:py-16 px-4 max-w-4xl mx-auto">
-        <div class="mb-6 flex justify-center">
-            <img src="https://github.com/fidaa83.png" alt="Fidaa Alsaiedahmad" class="w-32 h-32 md:w-36 md:h-36 rounded-full border-4 border-emerald-500 shadow-xl object-cover">
-        </div>
-
-        <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 dark:text-white" dir="ltr">
-            Fidaa Alsaiedahmad
-        </h1>
-        <p class="text-emerald-600 dark:text-emerald-400 font-semibold text-base md:text-lg mt-2" dir="ltr">Computer Engineer • Software & Web Developer</p>
-
-        <h2 class="text-xl md:text-3xl font-extrabold mt-6 md:mt-8 leading-tight text-slate-800 dark:text-slate-100">
-            مهندس برمجيات يبني لك مواقع وتطبيقات ويب حديثة وسريعة
-        </h2>
-
-        <p class="text-slate-600 dark:text-slate-300 text-sm md:text-lg mt-4 max-w-2xl mx-auto leading-relaxed">
-            مهندس معلوماتية/حاسوب متخصص في بناء الحلول البرمجية، وتطبيقات الويب، وأدوات الأتمتة باستخدام <span dir="ltr" class="font-bold">.NET</span> و <span dir="ltr" class="font-bold">JavaScript</span> و <span dir="ltr" class="font-bold">Python</span>.
-        </p>
-
-        <!-- Social & Contact Icons -->
-        <div class="flex flex-wrap justify-center gap-3 md:gap-4 mt-8">
-            <a href="https://wa.me/4747740663?text=مرحباً%20فداء،%20أرغب%20في%20الاستفسار%20عن%20خدمات%20تطوير%20المواقع" target="_blank" rel="noopener noreferrer" class="p-2.5 bg-white dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 rounded-xl border border-slate-300 dark:border-slate-700 transition shadow-sm hover:-translate-y-1">
-                <img src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="WhatsApp" class="w-7 h-7 md:w-8 md:h-8"/>
-            </a>
-            <a href="https://www.linkedin.com/in/fidaa-alsaiedahmad-3b4027371/" target="_blank" rel="noopener noreferrer" class="p-2.5 bg-white dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 rounded-xl border border-slate-300 dark:border-slate-700 transition shadow-sm hover:-translate-y-1">
-                <img src="https://img.icons8.com/color/48/linkedin.png" alt="LinkedIn" class="w-7 h-7 md:w-8 md:h-8"/>
-            </a>
-        </div>
+        <img src="https://github.com/fidaa83.png" alt="Profile" class="w-32 h-32 mx-auto rounded-full border-4 border-emerald-500 shadow-xl mb-6">
+        <h1 class="text-3xl md:text-5xl font-extrabold" dir="ltr">Fidaa Alsaiedahmad</h1>
+        <p class="text-emerald-600 font-semibold mt-2">Computer Engineer • Software & Web Developer</p>
+        <p class="mt-4 max-w-2xl mx-auto text-slate-600 dark:text-slate-300">مهندس برمجيات متخصص في بناء الحلول البرمجية وتطبيقات الويب الحديثة باستخدام .NET و JavaScript.</p>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="py-16 md:py-20 bg-slate-50 dark:bg-slate-900 transition-colors duration-300">
+    <section id="projects" class="py-16 bg-slate-100 dark:bg-slate-800/50">
         <div class="max-w-6xl mx-auto px-6">
-            <h3 class="text-2xl md:text-3xl font-bold text-center mb-4 text-emerald-600 dark:text-emerald-400">معرض الأعمال | Highlighted Projects</h3>
-            <p class="text-center text-slate-600 dark:text-slate-400 mb-12 text-sm md:text-base">تفاعلات الكروت (Hover) وأزرار الطلب المباشرة</p>
-            
+            <h3 class="text-3xl font-bold text-center mb-12 text-emerald-600">معرض الأعمال</h3>
             <div class="grid md:grid-cols-3 gap-8">
                 
-                <!-- Project 1: E-Commerce Store -->
-                <div class="group bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 flex flex-col justify-between shadow-lg hover:shadow-emerald-500/20 hover:border-emerald-500/50 transition-all duration-300 transform hover:-translate-y-2">
+                <!-- Project: Clothing Store -->
+                <div class="bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-lg flex flex-col justify-between">
                     <div>
-                        <div class="h-48 overflow-hidden relative">
-                            <img src="https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&w=800&q=80" alt="E-Commerce Store Preview" class="w-full h-full object-cover group-hover:scale-110 group-hover:rotate-1 transition-all duration-500">
-                            <span class="absolute top-3 right-3 text-xs bg-emerald-500 text-slate-950 font-bold px-3 py-1 rounded-full shadow">متجر إلكتروني</span>
-                            <!-- Overlay on Hover -->
-                            <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="text-white font-bold bg-emerald-600 px-4 py-2 rounded-lg">عرض التفاصيل</span>
-                            </div>
+                        <div class="h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80" alt="Clothing Store" class="w-full h-full object-cover">
                         </div>
                         <div class="p-6">
-                            <h4 class="text-xl font-bold text-slate-900 dark:text-white mb-2 group-hover:text-emerald-500 transition-colors" dir="ltr">E-Commerce Platform</h4>
-                            <p class="text-slate-600 dark:text-slate-300 text-xs md:text-sm mb-4 leading-relaxed">متجر إلكتروني متكامل بتصميم متجاوب، يحتوي سلة تسوق ديناميكية، تصفية المنتجات حسب الفئة، وواجهة دفع سلسة.</p>
+                            <h4 class="text-xl font-bold mb-2">Fashion & Apparel Web</h4>
+                            <p class="text-sm text-slate-600 dark:text-slate-300 mb-4">موقع استعراض علامة تجارية للأزياء مع واجهة تفاعلية.</p>
                         </div>
                     </div>
-                    <div class="p-6 pt-0">
-                        <a href="https://wa.me/4747740663?text=مرحباً%20فداء،%20أرغب%20في%20الاستفسار%20عن%20تفاصيل%20مشروع%20المتجر%20الإلكتروني" 
-                           target="_blank" 
-                           rel="noopener noreferrer"
-                           class="block w-full text-center bg-slate-800 dark:bg-slate-700 hover:bg-emerald-600 dark:hover:bg-emerald-500 text-white font-semibold py-2.5 rounded-xl text-xs transition-all duration-300 shadow-md hover:shadow-lg">
-                           🚀 اطلب مشروع مشابه
-                        </a>
+                    <!-- الأزرار المضافة هنا -->
+                    <div class="p-6 pt-0 flex gap-2">
+                        <a href="https://your-live-link.com" target="_blank" class="flex-1 text-center bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold py-2.5 rounded-xl text-xs transition">معاينة لايف</a>
+                        <a href="https://github.com/fidaa83/your-repo" target="_blank" class="flex-1 text-center bg-slate-200 dark:bg-slate-700 hover:bg-slate-300 dark:hover:bg-slate-600 font-semibold py-2.5 rounded-xl text-xs transition">عرض الكود</a>
                     </div>
                 </div>
 
-                <!-- Add more projects here following the same structure... -->
+                <!-- يمكنك إضافة باقي المشاريع هنا بنفس الهيكلية -->
             </div>
         </div>
     </section>
 
-    <!-- Scripts -->
     <script>
-        const themeToggleBtns = [document.getElementById('theme-toggle'), document.getElementById('theme-toggle-desktop')];
-        function updateIcons(isDark) {
-            const darkIcons = [document.getElementById('theme-toggle-dark-icon'), document.getElementById('theme-toggle-dark-icon-desktop')];
-            const lightIcons = [document.getElementById('theme-toggle-light-icon'), document.getElementById('theme-toggle-light-icon-desktop')];
-            if (isDark) {
-                darkIcons.forEach(el => el && el.classList.add('hidden'));
-                lightIcons.forEach(el => el && el.classList.remove('hidden'));
-            } else {
-                lightIcons.forEach(el => el && el.classList.add('hidden'));
-                darkIcons.forEach(el => el && el.classList.remove('hidden'));
-            }
-        }
-        updateIcons(document.documentElement.classList.contains('dark'));
-        themeToggleBtns.forEach(btn => {
-            if(!btn) return;
-            btn.addEventListener('click', function() {
-                const isDark = document.documentElement.classList.toggle('dark');
-                localStorage.setItem('color-theme', isDark ? 'dark' : 'light');
-                updateIcons(isDark);
-            });
+        // سكربت بسيط لتغيير المظهر
+        const toggle = document.getElementById('theme-toggle');
+        toggle.addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark');
+            localStorage.setItem('color-theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
         });
     </script>
 </body>
