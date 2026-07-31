@@ -3,87 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Fidaa Alsaiedahmad - Computer Engineer & Software Developer Portfolio">
     <title>Fidaa Alsaiedahmad | فداء السيد أحمد</title>
-    
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = {
-            darkMode: 'class',
-        }
-    </script>
-
-    <!-- Prevent Theme Flash -->
-    <script>
-        if (localStorage.getItem('color-theme') === 'light' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: light)').matches)) {
-            document.documentElement.classList.remove('dark');
-        } else {
-            document.documentElement.classList.add('dark');
-        }
+        tailwind.config = { darkMode: 'class' }
     </script>
 </head>
-<body class="bg-slate-50 text-slate-800 dark:bg-slate-900 dark:text-white font-sans scroll-smooth transition-colors duration-300">
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-900 dark:text-white transition-colors duration-300">
 
     <!-- Header -->
-    <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-50/80 dark:bg-slate-900/80 p-4 md:p-5 border-b border-slate-200 dark:border-slate-800 transition-colors duration-300">
-        <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
-            <div class="flex items-center justify-between w-full sm:w-auto">
-                <a href="#about" class="text-xl md:text-2xl font-bold text-emerald-600 dark:text-emerald-400">فداء | Fidaa</a>
-                <button id="theme-toggle" class="sm:hidden p-2 text-slate-500 dark:text-slate-400 rounded-lg">تغيير المظهر</button>
-            </div>
-            <nav class="flex flex-wrap justify-center items-center gap-3 sm:gap-6 text-sm">
-                <a href="#about" class="hover:text-emerald-500 transition">نبذة عني</a>
-                <a href="#skills" class="hover:text-emerald-500 transition">المهارات</a>
-                <a href="#projects" class="hover:text-emerald-500 transition">المشاريع</a>
-                <a href="#contact" class="hover:text-emerald-500 transition">تواصل معي</a>
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-50/80 dark:bg-slate-900/80 p-4 border-b border-slate-200 dark:border-slate-800">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <a href="#about" class="text-xl font-bold text-emerald-600 dark:text-emerald-400">فداء | Fidaa</a>
+            <nav class="flex gap-4 text-sm">
+                <a href="#about" class="hover:text-emerald-500">نبذة</a>
+                <a href="#skills" class="hover:text-emerald-500">المهارات</a>
+                <a href="#projects" class="hover:text-emerald-500">المشاريع</a>
+                <button id="theme-toggle" class="bg-slate-200 dark:bg-slate-700 px-3 py-1 rounded">تبديل المظهر</button>
             </nav>
         </div>
     </header>
 
     <!-- About Section -->
-    <section id="about" class="text-center py-12 md:py-16 px-4 max-w-4xl mx-auto">
-        <img src="https://github.com/fidaa83.png" alt="Profile" class="w-32 h-32 mx-auto rounded-full border-4 border-emerald-500 shadow-xl mb-6">
-        <h1 class="text-3xl md:text-5xl font-extrabold" dir="ltr">Fidaa Alsaiedahmad</h1>
+    <section id="about" class="py-16 text-center max-w-4xl mx-auto px-4">
+        <img src="https://github.com/fidaa83.png" alt="Profile" class="w-32 h-32 mx-auto rounded-full border-4 border-emerald-500 mb-6">
+        <h1 class="text-4xl font-extrabold" dir="ltr">Fidaa Alsaiedahmad</h1>
         <p class="text-emerald-600 font-semibold mt-2">Computer Engineer • Software & Web Developer</p>
-        <p class="mt-4 max-w-2xl mx-auto text-slate-600 dark:text-slate-300">مهندس برمجيات متخصص في بناء الحلول البرمجية وتطبيقات الويب الحديثة باستخدام .NET و JavaScript.</p>
+        <p class="mt-4 text-slate-600 dark:text-slate-300">مهندس برمجيات متخصص في بناء الحلول البرمجية وتطبيقات الويب الحديثة باستخدام .NET و JavaScript.</p>
+        
+        <!-- Social Icons -->
+        <div class="flex justify-center gap-4 mt-8">
+            <a href="mailto:fidaa.alsaiedahmad@gmail.com" class="p-2 bg-white dark:bg-slate-800 rounded-xl border">📧 البريد</a>
+            <a href="https://www.linkedin.com/in/fidaa-alsaiedahmad-3b4027371/" class="p-2 bg-white dark:bg-slate-800 rounded-xl border">💼 LinkedIn</a>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 bg-slate-100 dark:bg-slate-800/50">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h3 class="text-2xl font-bold mb-8 text-emerald-600">المهارات والأكاديمية</h3>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white dark:bg-slate-800 p-6 rounded-xl border">Web Development: HTML, CSS, JS</div>
+                <div class="bg-white dark:bg-slate-800 p-6 rounded-xl border">.NET Tech: C#, Clean Code</div>
+                <div class="bg-white dark:bg-slate-800 p-6 rounded-xl border">Automation: Python, Git</div>
+            </div>
+        </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="py-16 bg-slate-100 dark:bg-slate-800/50">
+    <section id="projects" class="py-16">
         <div class="max-w-6xl mx-auto px-6">
-            <h3 class="text-3xl font-bold text-center mb-12 text-emerald-600">معرض الأعمال</h3>
+            <h3 class="text-3xl font-bold text-center mb-12 text-emerald-600">المشاريع</h3>
             <div class="grid md:grid-cols-3 gap-8">
                 
-                <!-- Project: Clothing Store -->
-                <div class="bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-lg flex flex-col justify-between">
-                    <div>
-                        <div class="h-48 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80" alt="Clothing Store" class="w-full h-full object-cover">
+                <!-- Clothing Store Project -->
+                <div class="bg-white dark:bg-slate-800 rounded-2xl border shadow-lg overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold mb-2">Fashion & Apparel Web</h4>
+                        <p class="text-sm text-slate-600 dark:text-slate-300 mb-6">متجر إلكتروني للأزياء.</p>
+                        <div class="flex gap-2">
+                            <a href="#" class="flex-1 text-center bg-emerald-500 py-2 rounded-xl text-xs font-bold">معاينة</a>
+                            <a href="#" class="flex-1 text-center bg-slate-200 dark:bg-slate-700 py-2 rounded-xl text-xs">الكود</a>
                         </div>
-                        <div class="p-6">
-                            <h4 class="text-xl font-bold mb-2">Fashion & Apparel Web</h4>
-                            <p class="text-sm text-slate-600 dark:text-slate-300 mb-4">موقع استعراض علامة تجارية للأزياء مع واجهة تفاعلية.</p>
-                        </div>
-                    </div>
-                    <!-- الأزرار المضافة هنا -->
-                    <div class="p-6 pt-0 flex gap-2">
-                        <a href="https://your-live-link.com" target="_blank" class="flex-1 text-center bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold py-2.5 rounded-xl text-xs transition">معاينة لايف</a>
-                        <a href="https://github.com/fidaa83/your-repo" target="_blank" class="flex-1 text-center bg-slate-200 dark:bg-slate-700 hover:bg-slate-300 dark:hover:bg-slate-600 font-semibold py-2.5 rounded-xl text-xs transition">عرض الكود</a>
                     </div>
                 </div>
 
-                <!-- يمكنك إضافة باقي المشاريع هنا بنفس الهيكلية -->
+                <!-- Add more project cards here -->
             </div>
         </div>
     </section>
 
     <script>
-        // سكربت بسيط لتغيير المظهر
-        const toggle = document.getElementById('theme-toggle');
-        toggle.addEventListener('click', () => {
+        const btn = document.getElementById('theme-toggle');
+        btn.addEventListener('click', () => {
             document.documentElement.classList.toggle('dark');
-            localStorage.setItem('color-theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
         });
     </script>
 </body>
